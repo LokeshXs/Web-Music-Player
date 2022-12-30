@@ -21,6 +21,7 @@
   padding: 20px 20px;
   position: relative;
   z-index: 0;
+  border-radius: 40px;
   
 }
 
@@ -63,6 +64,7 @@ h4{
 }
 .fa-heart{
   color: #85FFBD;
+  transform: scale(1.2);
   
 }
 
@@ -81,3 +83,28 @@ h4{
   border-radius: 50%;
   background: black;
 }
+
+.controls{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.icon{
+  color: white;
+  transform: scale(1.5);
+  cursor: pointer;
+  
+}
+
+.play-icon{
+  transform: scale(3);
+  flex-shrink: 0;
+}
+audio{
+  display: none;
+}
+
+
