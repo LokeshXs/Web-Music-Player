@@ -1,5 +1,5 @@
 // let progress = document.getElementById("progress");
-let progress = document.querySelector('#progress')
+let progress = document.querySelector('#progress');
 // let song = document.getElementById("song");
 let song = document.querySelector("#song");
 // let ctrlIcon = document.getElementById("ctrlIcon");
