@@ -11,10 +11,17 @@ let like = document.querySelector('.fa-heart');
 
 let video = document.querySelector('#video');
 
+let songVolume = document.querySelector('.volume-function');
+
+let volumeIcon = document.querySelector('.volume-icon');
+
+let volumeBox = document.querySelector('.volume-box');
+
 //When song is loaded
 song.onloadedmetadata = function () {
   progress.max = song.duration;
   progress.value = song.currentTime;
+  songVolume.max = song.volume;
 };
 
 
@@ -50,11 +57,30 @@ progress.onchange = function () {
 };
 
 
+//Changing Volume
+songVolume.addEventListener('input', function () {
+  song.volume = songVolume.value;
+});
+
+
+
 like.addEventListener('click', function () {
   if (like.classList.contains('fa-heart2')) {
     like.classList.remove('fa-heart2');
   } else {
     like.classList.add('fa-heart2');
+  }
+})
+
+volumeIcon.addEventListener('click', function () {
+  if (volumeIcon.classList.contains('volume-icon2')) {
+    volumeIcon.classList.remove('volume-icon2');
+    volumeIcon.style.marginLeft = '0'
+    volumeBox.style.display = 'flex';
+  } else {
+    volumeIcon.classList.add('volume-icon2');
+    volumeIcon.style.marginLeft = '79.2%'
+    volumeBox.style.display = 'none';
   }
 })
 
