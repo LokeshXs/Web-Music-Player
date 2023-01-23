@@ -1,4 +1,4 @@
 # Web-Music-Player
 A Web Music player. Built using HTML, CSS, JAVASCRIPT
 
-![image](https://user-images.githubusercontent.com/77314004/210507997-e01fbfcc-c91f-423c-b301-c42f35d1a1cc.png)
+![image](https://user-images.githubusercontent.com/77314004/214047483-5e40a56c-6c6e-48dc-a3cf-947d471a9157.png)
